@@ -1,0 +1,29 @@
+header {
+    text-align: center;
+    height: 20vh;
+}
+header img {
+    width: 15%;
+    object-fit: cover;
+}
+section {
+    width: 80%;
+    margin: 170px auto;
+    text-align: center;
+}
+section h1 {
+    color: rgb(255, 251, 0);
+    font-size: 2rem;
+}
+.box {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box img {
+    width: 30%;
+    height: 30vh;
+    object-fit: cover;
+    height: 30vh;
+}

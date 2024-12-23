@@ -1,0 +1,66 @@
+.contanier {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 20%;
+  top: 25vh;
+}
+.right {
+  border: 1px solid black;
+  width: 20%;
+  height: 50vh;
+}
+.rand_num {
+  width: 40%;
+  height: 10vh;
+  border: 1px solid black;
+  position: relative;
+  bottom: 140px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#numbers {
+  outline: red;
+  height: 40vh;
+  width: 25%;
+  border: 1px solid black;
+  position: relative;
+  right: 40%;
+  top: 35px;
+}
+.left {
+  width: 15%;
+  height: 40vh;
+  border: 1px solid black;
+  position: relative;
+  right: 40%;
+  top: 35px;
+}
+.check {
+    padding: 0.5rem;
+    display: inline-block;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+    width: 10%;
+    position: relative;
+    left: 45%;
+    top: 30vh;
+}
+.check:hover {
+    background-color: rgb(10, 10, 141);
+    transform: rotateX(20deg) rotateY(20deg);
+}

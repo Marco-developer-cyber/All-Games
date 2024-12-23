@@ -1,0 +1,47 @@
+.contanier {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+#input {
+    position: relative;
+    top: 5vh;
+    padding: 0.5rem;
+    border:none;
+    box-shadow: 0px 0px 20px  #9370DB;
+    width: 30%;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+#input:hover {
+    box-shadow: 0px 0px 30px  #483D8B;
+}
+.box {
+    position: relative;
+    top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box div {
+    width: 30%;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    border-radius: 20px;
+}
+.box div:hover {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+.numbers_cont1 {
+    background-color: yellow;
+}
+.numbers_cont2 {
+    background-color: yellowgreen;
+}
+.numbers_cont3 {
+    background-color: blue;
+}

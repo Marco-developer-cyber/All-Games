@@ -1,0 +1,56 @@
+.h_one {
+    position: relative;
+    left: 45%;
+    width: 10%;
+}
+
+.contanier {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.contanier .div:nth-child(1) {
+    background-image: url(../photos/first_game_img.webp);
+}
+.contanier .div:nth-child(2) {
+    background-image: url(../photos/second_game_img_find_Ilyas.webp);
+}
+.contanier .div:nth-child(3) {
+    background-image: url(../photos/third_game_img.webp);
+}
+.contanier .div:nth-child(4) {
+    background-image: url(../photos/Fourth_game_img.webp);
+}
+.contanier .div:nth-child(5) {
+    background-image: url(../photos/fifth_game_img.webp);
+}
+a {
+    display: inline-block;
+    padding: 24vh;
+    width: 100%;
+    object-fit: contain;
+    z-index: 2;
+}
+.div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 50vh;
+    color: aliceblue;
+    background-color: gray;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    transition: 0.4s;
+    padding: 0.5rem;
+}
+
+.div:hover {
+    transform: scale(1.05);
+}
