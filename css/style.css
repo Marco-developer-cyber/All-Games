@@ -30,6 +30,12 @@
 .contanier .div:nth-child(5) {
     background-image: url(../photos/fifth_game_img.webp);
 }
+.contanier .div:nth-child(6) {
+    background-image: url(../photos/Sixth_game\)img.webp);
+}
+.contanier .div:nth-child(7) {
+    background-image: url(../photos/seventh_game_img.webp);
+}
 a {
     display: inline-block;
     padding: 24vh;

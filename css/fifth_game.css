@@ -15,6 +15,14 @@
   border: 1px solid black;
   width: 20%;
   height: 50vh;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.right p {
+  width: 50%;
+  height: 50vh;
 }
 .rand_num {
   width: 40%;
@@ -34,6 +42,7 @@
   position: relative;
   right: 40%;
   top: 35px;
+  font-size: 2rem;
 }
 .left {
   width: 15%;
@@ -42,25 +51,23 @@
   position: relative;
   right: 40%;
   top: 35px;
+  font-size: 7rem;
+  line-height: 2;
+  text-align: center;
 }
-.check {
-    padding: 0.5rem;
-    display: inline-block;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: transform 0.3s ease;
-    width: 10%;
-    position: relative;
-    left: 45%;
-    top: 30vh;
+.text {
+  width: 40%;
+  position: relative;
+  left: 35%;
+  top: 30%;
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: yellowgreen;
 }
-.check:hover {
-    background-color: rgb(10, 10, 141);
-    transform: rotateX(20deg) rotateY(20deg);
+span {
+  color: red;
+  font-weight: bold;
+}
+.text::after {
+  content: "😏";
 }
