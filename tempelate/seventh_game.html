@@ -1,25 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Math Exercise</title>
+    <title>Document</title>
+    <style>
+      .javob h1 {
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
     <link rel="stylesheet" href="../css/all.css" />
     <link rel="stylesheet" href="../css/seventh_game.css" />
   </head>
+
   <body>
-    <div class="contanier">
-        <h1>Shu amalni bajaring:</h1>
-        <div class="box">
-            <p class="num1"></p>
-            <p class="p">+</p>
-            <p class="num2"></p>
-            <p class="p2">=</p>
-        </div>
-        <div class="item">
-            0
-        </div>
+    <h1>Men oylagan sonni top!</h1>
+    <div class="round">0</div>
+    <div class="ques">
+      <span class="one"></span> + <span class="two"></span> =
     </div>
-    <div class="answers"></div>
+    <div class="javob"></div>
+    <nav class="back">
+      <a href="../index.html"><button>BACK</button></a>
+    </nav>
+
+    <script>
+      let en = 0;
+      let rand, rand2;
+
+      function generateRandomNumbers() {
+        rand = Math.trunc(Math.random() * 5) + 1;
+        rand2 = Math.trunc(Math.random() * 4) + 1;
+        document.querySelector(".one").textContent = rand;
+        document.querySelector(".two").textContent = rand2;
+      }
+
+      function run(beta) {
+        let round = document.querySelector(".round");
+        if (!rand) generateRandomNumbers(); // Генерируем числа только один раз в начале
+
+        if (!isNaN(beta.key)) {
+          round.textContent = beta.key; // Добавляем цифру к текущему значению
+        }
+
+        if (beta.key === "Enter") {
+          en++;
+          let son = parseInt(round.textContent, 10); // Преобразуем строку в число
+          let j = document.querySelector(".javob");
+          let h1 = document.createElement("h1");
+          let rand3 = rand + rand2;
+          let rand4 = rand - rand2;
+
+          if (son === rand3 || son === rand4) {
+            h1.textContent = `Siz toptingiz ✔ ${en} urinishda`;
+            h1.style.backgroundColor = `yellowgreen`;
+          } else {
+            h1.textContent = `Siz topa olmadingiz ❌`;
+            h1.style.backgroundColor = `red`;
+          }
+
+          j.appendChild(h1);
+          round.textContent = "0"; // Сбрасываем текущее значение
+          generateRandomNumbers(); // Генерируем новые числа для следующего раунда
+        }
+      }
+
+      window.addEventListener("keydown", run);
+    </script>
   </body>
 </html>
