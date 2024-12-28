@@ -40,7 +40,7 @@ r1.onclick = () => {
 r2.onclick = () => {
   contanier.background = "none";
   contanier.offsetHeight;
-  contanier.style.backgroundImage = `url(../photos/tenth_game_photos/naruto-wallper.png) `;
+  contanier.style.backgroundImage = `url(../photos/tenth_game_photos/naruto_wallper.png) `;
   name_.style.animation = "none";
   ani_name.style.animation = "none";
   about_name.style.animation = "none";

@@ -38,7 +38,7 @@
     color: orange;
     text-align: center;
     font-size: 3rem;
-    transform: translateY(5%);
+    transform: translateY(0%);
     animation: aniText 2s ease-in-out;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -54,6 +54,6 @@
     100% {
         filter: brightness(1);
         opacity: 1;
-        transform: translateY(5%);
+        transform: translateY(0%);
     }
 }

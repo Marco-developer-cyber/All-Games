@@ -48,6 +48,15 @@
 .contanier .div:nth-child(11) {
     background-image: url(../photos/eleventh_game_img.webp);
 }
+.contanier .div:nth-child(12) {
+    background-image: url(../photos/twelevth_game_img.jpg);
+}
+.contanier .div:nth-child(13) {
+    background-image: url(../photos/therteenth_game_img.webp);
+}
+.contanier .div:nth-child(14) {
+    background-image: url(../photos/fourteenth_game_img.webp);
+}
 a {
     display: inline-block;
     padding: 24vh;
