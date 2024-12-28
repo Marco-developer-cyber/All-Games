@@ -57,6 +57,15 @@
 .contanier .div:nth-child(14) {
     background-image: url(../photos/fourteenth_game_img.webp);
 }
+.contanier .div:nth-child(15) {
+    background-image: url(../photos/fiveteenth_game_img.webp);
+}
+.contanier .div:nth-child(16) {
+    background-image: url(../photos/sixteenth_game_img.webp);
+}
+.contanier .div:nth-child(17) {
+    background-image: url(../photos/seventeenth_game_img.webp);
+}
 a {
     display: inline-block;
     padding: 24vh;

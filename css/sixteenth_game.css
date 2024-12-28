@@ -1,0 +1,87 @@
+body {
+  overflow: hidden;
+}
+.dad {
+  width: 100%;
+  height: 100vh;
+}
+.game_display {
+  width: 60%;
+  margin: 80px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.scores {
+  width: 70%;
+  margin: -70px auto;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+.left_score,
+.right_score {
+  width: 10%;
+  height: 7vh;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  font-weight: bold;
+}
+.right_score {
+  background-color: red;
+}
+.left_score {
+  background-color: blue;
+}
+.winner {
+  width: 60%;
+  height: 20vh;
+  background-color: blue;
+  color: white;
+  font-size: 3rem;
+  margin: 0 auto;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+.esc {
+  width: 60%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  z-index: 5;
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  transform: translateY(100%);
+  background-color: red;
+}
+nav {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 1.5rem;
+}
+.box {
+  width: 30%;
+  height: 20vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.box:hover {
+  background-color: aqua;
+}
