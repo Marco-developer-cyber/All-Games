@@ -1,0 +1,144 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    margin-left: 15%;
+    display: flex;
+}
+.test-display {
+    height: 60vh;
+    width: 90%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.test-question {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    height: 30vh;
+}
+
+.test-question-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    line-height: 1.6;
+}
+
+.test-variant {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.test-variant label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.test-variant input[type="radio"] {
+    margin-right: 10px;
+}
+
+.test-variant label:hover {
+    background-color: #e9ecef;
+}
+
+.test-setting {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.test-setting-button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.test-setting-button.prev {
+    background-color: #6c757d;
+}
+
+.test-setting-button.next {
+    background-color: #007bff;
+}
+
+.test-setting-button.finish {
+    background-color: #ffc107;
+}
+
+.test-setting-button:hover {
+    opacity: 0.9;
+}
+
+.test-numbers {
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.test-numbers button {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.test-numbers button:hover {
+    background-color: #0056b3;
+}
+
+.test-numbers button:focus {
+    outline: 2px solid #ffc107;
+    outline-offset: 2px;
+}

@@ -1,0 +1,18 @@
+nav {
+    text-align: center;
+    height: 7vh;
+}
+.game_display {
+    width: 80%;
+    height: 90vh;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    width: 25%;
+    height: 30vh;
+    border: 1px solid black;
+}
