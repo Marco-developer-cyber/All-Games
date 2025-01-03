@@ -1,0 +1,32 @@
+header {
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+.words {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.word_display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    background-color: gray;
+}
+.word {
+    border: 1px solid red;
+    color: white;
+    font-size: 1.5rem;
+    width: 12.5%;
+    height: 9vh;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -97,7 +97,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  animation: aniInfo 2s ease;
+  animation: aniInfo 1s ease;
   position: absolute;
   top: 20vh;
   left: 20%;

@@ -1,4 +1,4 @@
-let data = [
+let hayvon = [
   "ayiq.jpg",
   "fil.jpg",
   "ilon.jpg",
@@ -12,58 +12,65 @@ let data = [
   "quyon.jpg",
   "tiger.jpg",
 ];
-let game_display = document.querySelector(".game_display");
+let animal = document.querySelectorAll(".box")
+
 for (let i = 0; i <= 11; i++) {
-  let box = document.createElement("div");
-  box.classList.add("box");
-  game_display.appendChild(box);
+    animal[i].src = "../photos/twentieth_game_photos/back.png"
 }
-for (let o = 0; o <= 11; o++) {
-  box[o].src = "../photos/twentieth_game_photos/back.png";
-}
-window.addEventListener("keypress", (e) => {
-  if (e.key == "Enter") {
-    for (let i = 0; i <= 50; i++) {
-      let rand1 = Math.floor(Math.random() * 50) % 12;
-      let rand2 = Math.floor(Math.random() * 50) % 12;
-      let t = data[rand1];
-      data[rand1] = data[rand2];
-      data[rand2] = t;
+window.addEventListener('keypress', (e) => {
+    if (e.key == "Enter") {
+        for (let u = 0; u <= 50; u++) {
+            let rand1 = Math.trunc(Math.random() * 100) % 12
+            let rand2 = Math.trunc(Math.random() * 100) % 12
+
+            let t = hayvon[rand1]
+            hayvon[rand1] = hayvon[rand2]
+            hayvon[rand2] = t
+        }
+        for (let i = 0; i <= 11; i++) {
+            animal[i].src = "../photos/twentieth_game_photos/back.png"
+        }
     }
-    for (let o = 0; o <= 11; o++) {
-        box[o].src = "../photos/twentieth_game_photos/back.png";
-      }
-  }
-});
-let firstCard = null;
-let secondCard = null;
-let cnt = 0;
-let box = game_display.querySelectorAll(".box").forEach((item, index) => {
-  item.onclick = () => {
-    cnt++;
-    item.style.transform = `rotateY(180deg)`;
-    setInterval(function () {
-      item.src = "../photos/twentieth_game_photos/" + data[index];
-      if (cnt == 1) {
-        firstCard = item;
-      } else if (cnt == 2) {
-        secondCard = item;
-      }
-    }, 300);
-  };
-});
-setTimeout(function () {
-  if (firstCard != null && secondCard != null) {
-    if (firstCard != secondCard && cnt == 2) {
-      firstCard.src = "back.png";
-      secondCard.src = "back.png";
-      cnt = 0;
-      firstCard = null;
-      secondCard = null;
-    } else {
-      cnt = 0;
-      firstCard = null;
-      secondCard = null;
+})
+let cnt = 0
+let firstCard = null
+let secondCard = null
+
+animal.forEach((item, index) => {
+    item.onclick = () => {
+        cnt++
+
+        item.style.transform = 'rotateY(180deg)'
+        setTimeout(function () {
+            item.src ="../photos/twentieth_game_photos/" +  hayvon[index]
+
+            if (cnt == 1) {
+                firstCard = item
+                console.log(firstCard.src)
+            }
+            else if (cnt == 2) {
+                secondCard = item
+            }
+
+
+
+        }, 300)
+
+        setTimeout(function () {
+            if (firstCard != null && secondCard != null) {
+                if (firstCard.src != secondCard.src && cnt == 2) {
+                    firstCard.src = "../photos/twentieth_game_photos/back.png"
+                    secondCard.src = "../photos/twentieth_game_photos/back.png"
+                    cnt = 0
+                    firstCard = null
+                    secondCard = null
+                }
+                else {
+                    cnt = 0
+                    firstCard = null
+                    secondCard = null
+                }
+            }
+        }, 700)
     }
-  }
-}, 700);
+});

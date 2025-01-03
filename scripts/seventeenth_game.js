@@ -10,7 +10,7 @@ add.onclick = () => {
     info.textContent = "Maxsulot muvofoqiyatli qo'shildi 😉"
     setInterval(function(){
         info.style.display = 'none'
-    },2000)
+    },1000)
     let products = document.createElement("div");
     products.classList.add("products");
     products.innerHTML = `
@@ -25,7 +25,7 @@ add.onclick = () => {
         info.textContent = "Maxsulot o'chirildi 😒"
         setInterval(function(){
             info.style.display = 'none'
-        },2000)
+        },1000)
         products.remove()
         if(addDusplay.textContent == "") {
             addDusplay.style.display = 'none'
@@ -37,7 +37,7 @@ remove.onclick = ()=> {
     info.textContent = "Barcha maxsulotlar o'chirildi 😥"
     setInterval(function(){
         info.style.display = 'none'
-    },2000)
+    },1000)
     addDusplay.style.display = 'none'
     addDusplay.textContent =""
 }

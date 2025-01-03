@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(186, 186, 186);
+}
+/* PART HEADER MUSK */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50vh;
+  background-color: aliceblue;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.header_img,
+.header_text {
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header_img img {
+  width: 20%;
+  height: 40vh;
+  border-radius: 100%;
+  object-fit: cover;
+}
+/* PART NAV MONEY.... */
+nav {
+  width: 80%;
+  height: 10vh;
+  background-color: rgb(50, 205, 50);
+  margin: 10px auto;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+}
+/* PRODUCTS PART.. */
+section {
+  width: 80%;
+  margin: 10px auto;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+.products_list {
+  width: 32%;
+  height: 50vh;
+  background-color: white;
+  text-align: center;
+}
+.products_list img {
+  width: 50%;
+  height: 30vh;
+  object-fit: contain;
+}
+.product_name {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.3rem;
+}
+.money {
+  color: yellowgreen;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+}
+.sell_button,
+.buy_button,
+#product_number {
+    padding: 0.5rem;
+    width: 25%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#product_number {
+    border: 1px solid black;
+}
+.sell_button {
+    color: black;
+    background-color: gainsboro;
+}
+.buy_button {
+    background-color: rgb(50, 205, 50);
+    color: white;
+}
+.products_list button:active {
+    transform: scale(0.9);
+}
+.products_list button:hover {
+    transform: rotateX(30deg);
+    cursor: pointer;
+}
+.buy_button:hover {
+    background-color: green;
+    border-bottom: 5px solid yellowgreen;
+}
+.sell_button:hover {
+    background-color: rgb(169, 30, 30);
+    border-bottom: 5px solid red;
+    color: white;
+}

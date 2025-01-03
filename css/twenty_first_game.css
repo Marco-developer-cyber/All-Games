@@ -1,0 +1,54 @@
+.game_display {
+  width: 60%;
+  margin: 10px auto;
+  height: 90vh;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.row {
+  width: 33.3%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.row img {
+  width: 50%;
+  height: 19.5%;
+  object-fit: contain;
+}
+.animated_button {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem ;
+    width: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    background-color: yellow ;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated_button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: yellowgreen;
+    color: aliceblue;
+}
+
+.animated_button:active {
+    transform: scale(0.95);
+    color: red;
+}
+.red_border {
+    width: 60%;
+    height: 20vh;
+    z-index: 5;
+    border: 5px solid red;
+    margin: -400px auto;
+}

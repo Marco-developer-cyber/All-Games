@@ -75,6 +75,18 @@
 .contanier .div:nth-child(20) {
     background-image: url(../photos/twentieth_game_img.webp);
 }
+.contanier .div:nth-child(21) {
+    background-image: url(../photos/twenty_first_game_img.webp);
+}
+.contanier .div:nth-child(22) {
+    background-image: url(../photos/twenty_second_img.webp);
+}
+.contanier .div:nth-child(23) {
+    background-image: url(../photos/twenty_third_game_img.webp);
+}
+.contanier .div:nth-child(24) {
+    background-image: url(../photos/twenty_fourth_game_img.webp);
+}
 a {
     display: inline-block;
     padding: 24vh;
