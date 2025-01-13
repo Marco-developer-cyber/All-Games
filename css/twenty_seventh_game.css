@@ -1,0 +1,110 @@
+/* part HEADER.. */
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(4, 4, 170);
+}
+.controls_display {
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.controls_display input,
+.controls_display button {
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.number_choose {
+  width: 30%;
+}
+#ch_num {
+  width: 25%;
+}
+.begin_button {
+  background-color: aqua;
+  border: none;
+  width: 10%;
+}
+.begin_button:hover {
+  background-color: rgb(0, 167, 167);
+  color: white;
+  box-shadow: 0 0 25px aqua;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#file_inp {
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  color: black;
+}
+#check_imp {
+  transform: scale(1.6);
+}
+/* PART SECTION.. */
+section {
+  width: 70%;
+  margin:10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+}
+.words_display {
+  width: 23%;
+  height: 45vh;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+.words_display p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.words_display img {
+  object-fit: contain;
+  width: 80%;
+  height: 33vh;
+}
+.eng_name {
+  color: blue;
+}
+.uzb_name {
+  color: red;
+}
+/* PART FOOTER.. */
+footer {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+}
+.finish_button {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  background-color: yellowgreen;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.finish_button:hover {
+  background-color: green;
+  color: aqua;
+}
+footer a {
+  text-decoration: none;
+}

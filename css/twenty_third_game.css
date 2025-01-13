@@ -24,24 +24,15 @@
 }
 .box {
     position: absolute;
-    animation:Aniword 3s ease-in-out;
+    animation:Aniword 3s forwards;
     color: aliceblue    ;
 }
 @keyframes Aniword {
     0% {
         top: 0%;
     }
-    20% {
-        top: 20%;
-    }
-    50% {
-        top: 50%;
-    }
-    80% {
-        top: 90%;
-    }
     100% {
-        top: 95%;
+        top: 100%;
     }
 }
 .show {

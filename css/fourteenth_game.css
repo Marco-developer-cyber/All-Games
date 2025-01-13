@@ -80,8 +80,7 @@
   left: 0;
   top: 30%;
   transform: translateX(-70%);
-  /* box-shadow: 0 0 10px red; */
-  border-radius: 10px;
+  border-radius: 10px;  
 }
 .controls p {
   font-size: 1.2rem;

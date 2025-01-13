@@ -50,3 +50,8 @@
     object-fit: contain;
     position: relative;
 }
+.burst1, .burst2 {
+    display: none;
+    width: 25%;
+    position: absolute;
+}

@@ -2,11 +2,14 @@ let left_score = document.querySelector(".left_score");
 let right_score = document.querySelector(".right_score");
 let left_img = document.querySelector(".user_hand img");
 let right_img = document.querySelector(".comp_hand img");
-
+let resetButton = document.querySelector(".reset_button");
+let paper = document.querySelector(".paper");
+let scissors = document.querySelector(".scissors");
+let rock = document.querySelector(".rock");
 let data = [
-  "../photos/fourteenth_game_photos/dom_dom_ziki/qaychi2.jpg", // Ножницы
-  "../photos/fourteenth_game_photos/dom_dom_ziki/qogoz2.jpg", // Бумага
-  "../photos/fourteenth_game_photos/dom_dom_ziki/tosh2.jpg", // Камень
+  "../photos/fourteenth_game_photos/dom_dom_ziki/qaychi2.jpg",
+  "../photos/fourteenth_game_photos/dom_dom_ziki/qogoz2.jpg",
+  "../photos/fourteenth_game_photos/dom_dom_ziki/tosh2.jpg",
 ];
 
 let userScore = 0;
@@ -31,7 +34,30 @@ window.addEventListener("keypress", (e) => {
     check(2, comp);
   }
 });
-
+scissors.onclick = () => {
+  let randomIndex = Math.floor(Math.random() * 3);
+  let randomImage = data[randomIndex];
+  let comp = randomIndex;
+  left_img.src = "../photos/fourteenth_game_photos/dom_dom_ziki/qaychi1.jpg";
+  right_img.src = randomImage;
+  check(0, comp);
+};
+paper.onclick = () => {
+  let randomIndex = Math.floor(Math.random() * 3);
+  let randomImage = data[randomIndex];
+  let comp = randomIndex;
+  left_img.src = "../photos/fourteenth_game_photos/dom_dom_ziki/qogoz1.jpg";
+  right_img.src = randomImage;
+  check(1, comp);
+};
+rock.onclick = () => {
+  let randomIndex = Math.floor(Math.random() * 3);
+  let randomImage = data[randomIndex];
+  let comp = randomIndex;
+  left_img.src = "../photos/fourteenth_game_photos/dom_dom_ziki/tosh1.jpg";
+  right_img.src = randomImage;
+  check(2, comp);
+};
 function check(user, comp) {
   if (user === comp) {
   } else if (
@@ -58,4 +84,12 @@ i.onclick = () => {
     beta = true;
     controls.style.transform = `translateX(-70%)`;
   }
+};
+resetButton.onclick = () => {
+  userScore = 0;
+  compScore = 0;
+  left_score.textContent = "0";
+  right_score.textContent = "0";
+  left_img.src = "";
+  right_img.src = "";
 };

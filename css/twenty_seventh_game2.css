@@ -1,0 +1,23 @@
+.menu_back {
+    width: 7%;
+    height: 7vh;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+.menu_button {
+    width: 100%;
+    height: 7vh;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: yellow;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menu_button:hover {
+    background-color: rgb(198, 198, 18);
+    transform: rotateX(20deg);
+    border-bottom: 5px solid yellow;
+    cursor: pointer;
+}

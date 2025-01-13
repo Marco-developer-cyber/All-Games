@@ -100,7 +100,7 @@ section {
 }
 .products_list button:active {
     transform: scale(0.9);
-}
+}  
 .products_list button:hover {
     transform: rotateX(30deg);
     cursor: pointer;

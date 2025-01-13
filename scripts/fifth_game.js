@@ -2,7 +2,7 @@ let right = document.querySelector(".right");
 let rand_num = document.querySelector(".rand_num");
 let numbers = document.getElementById("numbers");
 let left = document.querySelector(".left");
-let p = document.querySelector(".right p ")
+let p = document.querySelector(".right p ");
 
 let random = Math.floor(Math.random() * 1000000);
 rand_num.textContent = random;
@@ -13,9 +13,15 @@ window.addEventListener("keyup", (e) => {
       rand_num.textContent = random;
       p.textContent += "✔";
       left.textContent = "✔";
+      setTimeout(() => {
+        left.textContent = "";
+      }, 1000);
     } else {
       p.textContent += "❌";
       left.textContent = "❌";
+      setTimeout(() => {
+        left.textContent = "";
+      }, 1000);
     }
   }
 });

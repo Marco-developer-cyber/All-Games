@@ -228,9 +228,9 @@ let product_json = {
 let products = document.querySelector(".products");
 let nav_money = document.querySelector(".nav_money");
 textMoney = 250000000000;
-nav_money.textContent ="$"+ textMoney
-let cl = 0;
+nav_money.textContent = "$" + textMoney;
 for (let i = 1; i <= 45; i++) {
+  let cl = 0;
   let products_list = document.createElement("div");
   products_list.classList.add("products_list");
   products_list.innerHTML = `
@@ -241,34 +241,34 @@ for (let i = 1; i <= 45; i++) {
                     <button class="sell_button">Sell</button>
                     <input type="number" id="product_number">
                     <button class="buy_button">Buy</button>
-                </div>
-    `;
+                    </div>
+                    `;
   console.log(products_list);
   products.appendChild(products_list);
   let buyButton = products_list.querySelector(".buy_button");
   let sellButton = products_list.querySelector(".sell_button");
   let inp = products_list.querySelector("#product_number");
-  inp.value  = 0
+  inp.value = 0;
   buyButton.onclick = () => {
     cl++;
     inp.value = cl;
-    textMoney -= product_json[i]["price"]
-    nav_money.textContent ="$"+ textMoney
-    if(cl>= 250000000000) {
-        textMoney = 0
-        nav_money.textContent = "$"+ textMoney
+    textMoney -= product_json[i]["price"];
+    nav_money.textContent = "$" + textMoney;
+    if (cl >= 250000000000) {
+      textMoney = 0;
+      nav_money.textContent = "$" + textMoney;
     }
   };
   sellButton.onclick = () => {
     cl--;
-    textMoney += product_json[i]["price"]
-    nav_money.textContent ="$"+ textMoney
+    textMoney += product_json[i]["price"];
+    nav_money.textContent = "$" + textMoney;
     inp.value = cl;
     if (cl <= 0) {
       cl = 0;
-      inp.value = cl
-      textMoney = 250000000000
-      nav_money.textContent = "$" + textMoney
+      inp.value = cl;
+      textMoney = 250000000000;
+      nav_money.textContent = "$" + textMoney;
     }
   };
 }

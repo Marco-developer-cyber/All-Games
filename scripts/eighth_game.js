@@ -1,40 +1,45 @@
-let st1 = document.querySelector(".st1");
-let st2 = document.querySelector(".st2");
-let round = document.querySelector(".round")
+let maydon = document.querySelector(".maydon")
+let r = document.querySelector(".round")
+
+
+
 let positionX = 0
 let positionY = 0
-let stayX = 6
-let stayY = 6
-let c = 0
-window.addEventListener("keypress", (t)=>{
-    if(t.key == "ArrowRight") {
-        c+=100
+
+let stepX = 6
+let stepY = 6
+
+function run(lol) {
+    positionX += stepX
+    positionY += stepY
+
+    if (lol.key == "g") {
+        positionX -= stepX
+        positionY -= stepY
     }
-    else if (t.key == "ArrowLeft") {
-        c-=100
+    else if (lol.key == "f") {
+        positionY += stepY
+        positionX += stepX
     }
-    st1.style.right = `${c}px`
-    st1.style.left = `${c}px`
-})
-let m = 0
-window.addEventListener("keypress", (b)=>{
-    if(b.key == "d") {
-        m+=100
-    }
-    else if (b.key == "a") {
-        m-=100
-    }
-    st2.style.right = `${m}px`
-    st2.style.left = `${m}px`
-})
+
+    r.style.transform = `translate(${positionX}px, ${positionY}px)`
+
+}
+window.addEventListener("keydown", run)
 
 function beta() {
-    positionX += stayX
-    positionY += stayY
-    if(positionX + stayX > 550 || positionY + stayY < 0) {
-        stayX = -stayX
-        stayY = -stayY
+    positionX += stepX
+    positionY += stepY
+
+    if (positionX + stepX > 550 || positionX + stepX < 0) {
+        stepX = -stepX
     }
-    round.style.transform = `translateY(${stayY}, translateX(${stayX}))`
+    if (positionY + stepY > 630 || positionY + stepY < 0) {
+        stepY = -stepY
+    }
+
+    r.style.transform = `translate(${positionX}px, ${positionY}px)`
+
+    requestAnimationFrame(beta)
 }
-window.addEventListener("keypress", beta);
+beta();

@@ -1,25 +1,44 @@
-.contanier {
+.maydon {
+  width: 600px;
+  height: 700px;
+  border: solid 6px black;
   margin: 0 auto;
-  border: 5px solid blue;
-  height: 100vh;
-  width: 40%;
-}
-.st1,
-.st2 {
-  width: 10%;
-  padding: 0.5rem;
-  position: relative;
-  background-color: red;
-}
-.st1 {
-  top: 0;
-}
-.st2 {
-  top: 88vh;
 }
 .round {
-    width: 6%;
-    height: 5vh;
-    background-color: blue;
-    border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-image: url(../photos/eightth_game_img/rasengan_naruto-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.back {
+  position: absolute;
+  top: 5vh;
+  right: 1%;
+  width: 10%;
+  height: 5vh;
+  background-color: red;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 100;
+}
+.back:hover {
+  background-color: rgb(186, 6, 6);
+  transform: skew(10deg);
+  box-shadow: 0 0 20px red;
+}
+.back:active {
+  transform: scale(0.8);
+  background-color: blue;
+}
+.back button {
+  background: none;
+  border: none;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  font-size: 1.5rem;
 }

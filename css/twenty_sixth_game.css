@@ -1,0 +1,81 @@
+.game_display {
+  width: 60%;
+  margin: auto;
+  height: 90vh;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  position: relative;
+  padding: 1rem;
+}
+.score {
+  border-bottom: 3px solid greenyellow;
+}
+.score,
+.name_display {
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+}
+.photo_display {
+  width: 100%;
+  height: 50dvh;
+}
+.photo_display img {
+  width: 100%;
+  object-fit: contain;
+  height: 65vh;
+}
+.name_display {
+  position: relative;
+  top: 10%;
+  font-size: 1.2rem;
+}
+.play {
+  position: relative;
+  top: 10%;
+  left: 3%;
+  width: 5%;
+  padding: 0.5rem;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+.play i:hover {
+  color: blue;
+}
+.play:hover {
+  background-color: rgb(178, 173, 173);
+  cursor: pointer;
+}
+.butt_result {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  color: aliceblue;   
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  perspective: 1000px;
+}
+.butt_result:hover {
+  transform: rotateX(30deg);
+  background-color: green;
+  border-bottom: 5px solid yellowgreen;
+  cursor: pointer;
+}

@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Log-in</title>
     <link rel="stylesheet" href="../css/all.css" />
     <link rel="stylesheet" href="../css/nine_game.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.css">
   </head>
   <body>
     <div class="contanier">
@@ -14,15 +15,34 @@
         </div>
         <div class="box">
             <label for="gm">Email:</label>
-            <input type="email" name="gm" id="email" placeholder="Login"> 
+            <input type="email" name="gm" id="email" class="email" placeholder="Login"> 
             <br><br> <br>
             <label for="ps" class="ps">Password:</label>
             <input type="password" name="ps" id="password" placeholder="Password">
             <br><br>
-            <button class="log_button">Login</button> <br><br>
+            <button class="log_button">Login</button>
+            <p class="wrong">Email or password wrong 😯</p>
             <a href="#" class="log_href">I forgot password</a>
         </div>
         <img src="../photos/nineth_game_photo/eye-x.png" alt="eye" class="eye">
+    </div>
+    <nav>
+      <div class="forgot_display">
+        <label for="forgot_imp">Write your last password</label><br><br>
+        <input type="text" name="forgot_imp" id="forgot_imp" class="email"><br><br>
+        <button class="log_button">Enter</button>
+      </div>
+    </nav>
+    <section>
+      <div class="back_display">
+        <img src="../photos/nineth_game_photo/шина.jpg" alt="Шина">
+        <p>Thanks for the regestration!</p>
+      </div>
+    </section>
+    <div class="controls">
+      <p>Email: mercedes</p>
+      <p>Password: mercedes</p>
+      <i class="fa-solid fa-arrow-alt-circle-right"></i>
     </div>
     <nav class="back">
         <a href="../index.html"><button>BACK</button></a>
@@ -30,3 +50,4 @@
     <script src="../scripts/nine_game.js"></script>
   </body>
 </html>
+  
